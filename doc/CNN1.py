@@ -28,7 +28,7 @@ model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Conv2D(32, (5,5), activation='relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Flatten())
-model.add(Dense(1024, activation='relu'))
+#model.add(Dense(1024, activation='relu'))
 model.add(Dense(10, activation='softmax'))
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
